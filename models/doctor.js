@@ -1,0 +1,5 @@
+/*
+doctor	
+id	INT NOT NULL PRIMARY KEY
+name	STRING NOT NULL 
+*/
