@@ -35,7 +35,6 @@ Symptom.init(
               model: 'doctor',
               key: 'id',  
             }
-
         },
     },
     {

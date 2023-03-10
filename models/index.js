@@ -47,29 +47,29 @@ Doctor.belongsToMany(Tag,{
 
 
 //tracker (records) have one symptom
-Tracker.hasOne(Symptom,{
+/* Tracker.hasOne(Symptom,{
     foreignKey: 'symptom_id',
     onDelete: 'SET NULL',
-})
+}) */
 //symptoms have many records
-Symptom.belongTo(Tracker,{
+/* Symptom.belongTo(Tracker,{
     foreignKey: 'symptom_id',
 
 })
-
+ */
 
 //tracker records have many tags 
-Tracker.belongsToMany(Tag, {
+/* Tracker.belongsToMany(Tag, {
     through: 'tagTracker',
     foreignKey:'tag_id',
     onDelete: 'SET NULL',
-})
+}) */
 //tags have many tracker records
-Tag.belongsToMany(Tracker,{
+/* Tag.belongsToMany(Tracker,{
     through: 'tagTracker',
     foreignKey: 'tracker_id',
     onDelete: 'SET NULL',
 })
-
+ */
 module.exports = { Symptom, Tag, Doctor, Tracker };
 
