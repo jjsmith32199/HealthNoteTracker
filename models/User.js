@@ -34,8 +34,8 @@ User.init(
       validate: {
         len: [8],
         is: /^[a-z0-9!@#$%^&*()]+$/i, //Requires characters a-z numbers 0-9 and !@#$%^&*() in any order
-        isUppercase: true,
-        isLowercase: true,
+        /* isUppercase: true,
+        isLowercase: true, */
       },
     },
   },
