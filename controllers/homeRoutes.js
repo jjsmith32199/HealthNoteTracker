@@ -2,9 +2,9 @@ const router = require('express').Router();
 const { User } = require('../models/User');
 const withAuth = require('../utils/auth');
 
-
-router.get(('/'), withAuth, async (req, res) =>{
-
+// paste back in after ('./') when setting up auth : withAuth,
+router.get(('/'),  async (req, res) =>{
+  res.render('homepage');
 });
 
 router.get('/login', (req, res) => {
