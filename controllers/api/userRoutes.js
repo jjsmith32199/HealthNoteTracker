@@ -15,6 +15,7 @@ router.get('/', async (req, res) => {
   
 });
 router.post('/', async (req, res) => {
+  
     try {
       const dbUserData = await User.create({
         name: req.body.name,
@@ -23,6 +24,7 @@ router.post('/', async (req, res) => {
       });
   
       req.session.save(() => {
+        
         req.session.loggedIn = true;
   
         res.status(200).json(dbUserData);
