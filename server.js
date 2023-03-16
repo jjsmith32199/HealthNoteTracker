@@ -37,4 +37,4 @@ app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
-});
+}); //toggle back to false after finished making model changes
