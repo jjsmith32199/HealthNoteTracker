@@ -3,21 +3,43 @@
     <div class="col-12">
       <form>
         <fieldset>
-          <legend class="text-center"> Doctor Tracker </legend>
+          <legend class="text-center"> Health Tracker </legend>
+          <div>
           <div class="float-sm-left">
             <label for="exampleInputEmail1" class="form-label mt-4 text-center">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp"
               placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">.</small>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" class="form-control" id="password-login" placeholder="Password">
           </div>
-          <button type="button" class="btn btn-primary">Login</button>
-          <button type="button" class="btn btn-primary">Sign Up</button>
+          <button type="button" class="btn btn-primary" id="login-btn">Login</button>
+          </div>
+
+          <div>
+          <div class="float-sm-left">
+            <label for="nameInput" class="form-label mt-4 text-center">Name</label>
+            <input type="email" class="form-control" id="name-create" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">.</small>
+          </div>
+          <div class="float-sm-left">
+            <label for="exampleInputEmail1" class="form-label mt-4 text-center">Email address</label>
+            <input type="email" class="form-control" id="email-create" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+            <input type="password" class="form-control" id="password-create" placeholder="Password">
+          </div>
+          <button type="button" class="btn btn-primary">Create Account</button>
+          </div>
         </fieldset>
       </form>
     </div>
   </div>
 </div>
+<script src="/js/login.js"> </script>
