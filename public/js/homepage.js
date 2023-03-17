@@ -15,7 +15,8 @@ async function formHandler (event) {
         },
     });
     if (response.ok) {
-        alert('Successfully saved note!')
+        alert('Note saved')
+        document.location.replace('/note');
     } else {
         alert('Failed to save note.')
     }

@@ -44,33 +44,30 @@
         <textarea class="form-control" id="details" rows="3"></textarea>
       </div>
       </form>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-11"></div>
-    <div class="col-1">
-      <button id="logout" type="button" class="btn btn-secondary ">logout</button>
-    </div>
-  </div>
-</div>
-<script src="/js/homepage.js"> </script>
-<!--Add boolean logic so it only runs if you are logged in-->
-<script src="/js/logout.js"> </script>
-</body>
+      <div class="container">
 
+        {{#each users as |note| }}
+        <div class="row row-cols-3">  
+            <div class="card border-info mb-3">
+              <div class="card-header">  {{note.symptom}} </div>
+              <div class="card-body">
+                <h4 class="card-title"></h4>
+                <h3> {{note.details}} </h3>
+              </div>
+  
+        </div>
+         {{/each}}
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="container">
+        <div class="row">
+          <div class="col-11"></div>
+          <div class="col-1">
+            <button id="logout" type="button" class="btn btn-secondary ">logout</button>
+          </div>
+        </div>
+      </div>
+      <script src="/js/homepage.js"> </script>
+      <!--Add boolean logic so it only runs if you are logged in-->
+      <script src="/js/logout.js"> </script>
+      </body>
