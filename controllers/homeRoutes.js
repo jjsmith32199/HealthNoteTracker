@@ -5,11 +5,12 @@ const withAuth = require('../utils/auth');
 // Prevent non logged in users from viewing the homepage
 router.get('/', withAuth, async (req, res) => {
   try {
+    //better to use find by pk, no need to .map on line 14, but works as is
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
       order: [['name', 'ASC']],
     });
-
+    //.userData.get instead for one user
     const users = userData.map((project) => project.get({ plain: true }));
 
     res.render('homepage', {
