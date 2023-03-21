@@ -22,4 +22,4 @@ When you load this web application you will be automatically directed to the log
 
 For any questions about this project please contact:
 
-Bootcamp breakout room 3
+Anthony, Daniel, Justin. Max, and Jessica from group 3
