@@ -25,11 +25,9 @@ const loginFormHandler = async (event) => {
   }
 };
 
-document
-  .getElementById('login-btn')
-  .addEventListener('click', loginFormHandler);
 
-/*
+
+
 const createUserHandler = async (event) => {
   // Stop the browser from submitting the form so we can do so with JavaScript
   event.preventDefault();
@@ -41,7 +39,7 @@ const createUserHandler = async (event) => {
 
   if (name && email && password) {
     // Send the e-mail and password to the server
-    const response = await fetch('/api/users/login', {
+    const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),
       headers: { 'Content-Type': 'application/json' },
@@ -54,5 +52,12 @@ const createUserHandler = async (event) => {
     }
   }
 };
-*/
 
+
+document
+  .getElementById('login-btn')
+  .addEventListener('click', loginFormHandler);
+
+document
+  .getElementById('create-btn')
+  .addEventListener('click', createUserHandler);
